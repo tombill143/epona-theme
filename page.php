@@ -12,7 +12,7 @@ while (have_posts()) {
             <section class="interior-page-section">
             <div class="sidebar">
             <h2 class="author-description">By</h2>
-            <p class="interior-text">Joe Bloggs</p>
+            <p class="interior-text" id="randomName">Joe Bloggs</p>
             <h2 class="Share">Share</h2>
             <div class="share-icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -25,7 +25,39 @@ while (have_posts()) {
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
                     </svg>
                 </div>
-         <p class="interior-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit itaque, dolore quos, hic libero recusandae facere et iste non laborum aspernatur saepe exercitationem similique dignissimos eum. Ex, et autem!</p> 
+                <div class="column-container">
+    <div><a href="#">Willow Green</a></div>
+    <div><a href="#">Harper Rose</a></div>
+    <div><a href="#">Oakley Skye</a></div>
+    <div><a href="#">Finnian Birch</a></div>
+    <div><a href="#">Elara Rain</a></div>
+    <div><a href="#">Rowan Hart</a></div>
+    <div><a href="#">Lark Meadow</a></div>
+    <div><a href="#">Ember Swift</a></div>
+    <div><a href="#">Alden Reed</a></div>
+    <div><a href="#">Hazel Stone</a></div>
+    <div><a href="#">Sable Wren</a></div>
+    <div><a href="#">Juniper Moss</a></div>
+    <div><a href="#">Cedar Sage</a></div>
+    <div><a href="#">Briar Moon</a></div>
+    <div><a href="#">Clover Frost</a></div>
+    <div><a href="#">Arthur Smith</a></div>
+    <div><a href="#">Janet Fielding</a></div>
+    <div><a href="#">Maud Adams</a></div>
+    <div><a href="#">Judith Myers</a></div>
+    <div><a href="#">Dave Hamster</a></div>
+    <div><a href="#">Molly Sugden</a></div>
+    <div><a href="#">Iggy Sandlewood</a></div>
+    <div><a href="#">Emerald Green</a></div>
+    <div><a href="#">Jody Stephens</a></div>
+    <div><a href="#">Rosamund Huffinton</a></div>
+    <div><a href="#">Carl Creasote</a></div>
+    <div><a href="#">Lilly Humberside</a></div>
+    <div><a href="#">Peynton Reed</a></div>
+    <div><a href="#">Sylvia Noble</a></div>
+    <div><a href="#">Eleanor Crumpsall</a></div>
+</div>
+
         </div>
 
                 <div class="article">
@@ -40,7 +72,7 @@ while (have_posts()) {
                     ?>
 
                     <h1 class="page-title"><?php the_title(); ?></h1>
-                    <h2 class="page-intro">Don't forget to replace me later</h2>
+                    <h2 class="page-intro" id="random-date"></h2>
                     <div class="interior-article-text">
                         <?php the_content(); ?>
                     </div>
@@ -128,7 +160,7 @@ while (have_posts()) {
                     </div>
                   </div>
                   <div class="player-wrapper">
-                  <img class="player" src="<?php echo get_theme_file_uri('images/keith-hancock.jpeg'); ?>" alt="">
+                  <img class="player" src="<?php echo get_theme_file_uri('images/khb-performance.JPG'); ?>" alt="">
                     <div class="svg-wrapper">
                       <a href="https://www.google.com" style="text-decoration: none;">
                         <svg class="facebook-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">

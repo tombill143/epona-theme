@@ -31,7 +31,7 @@ if (is_home() && $post->ID == get_option('page_for_posts')) {
         
         <div class="image-container narrower">
         <a href="<?php echo esc_url(get_permalink(get_page_by_title('About Us'))); ?>"><img class="article-image-narrower"  src="<?php echo get_theme_file_uri('images/about-us-link.png'); ?>" alt="Description of Image 3"></a>
-          <a href=""><p class="post-description"><?php echo esc_html($posts_page_title); ?></p></a>  
+          <a href=""><p class="post-description"></a>  
         </div>
         
         
@@ -71,7 +71,8 @@ if (is_home() && $post->ID == get_option('page_for_posts')) {
     <section class="stories-section"id="section4">  
     <div class="image-container2">
     <a href="<?php echo site_url('Happy-Christmas!-Essential-tracks-for-you-festive-collection'); ?>"><img class="article-image2"src="<?php echo get_theme_file_uri('images/christmas.png'); ?>" alt="Description of Image 1"></a> 
-    <a href="<?php echo site_url('Happy-Christmas!-Essential-tracks-for-you-festive-collection'); ?>"><p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi totam adipisci</p></a> 
+    <a href="<?php echo site_url('Happy-Christmas!-Essential-tracks-for-you-festive-collection'); ?>"><p class="post-description">Happy Christmas! Essential 
+tracks for you festive collection</p></a> 
     </div>
     
     <div class="image-container2">
