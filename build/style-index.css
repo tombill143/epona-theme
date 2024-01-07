@@ -88,6 +88,10 @@ nav a {
   font-weight: bold;
 }
 
+header .left-container.menu svg:hover {
+  cursor: pointer;
+}
+
 
 .middle-nav-container li:hover .hover-image-home {
   content: url('./images/hover-home.svg') !important;

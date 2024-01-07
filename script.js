@@ -37,7 +37,7 @@ const names = [
 
 
 function setupBurgerNav() {
-    const burger = document.querySelector("header svg");
+  const burger = document.querySelector("header .left-container.menu svg");
     const nav = document.querySelector("nav ul");
 
     burger.addEventListener("click", function () {
