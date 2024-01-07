@@ -36,7 +36,7 @@ if (is_home() && $post->ID == get_option('page_for_posts')) {
         
         
     </section>
-
+            
     <section class="homepage-section2"id="section2">
         <div class="image-container2">
         <a href="<?php echo site_url('Album-Review:-A-walk-in-other-shoes'); ?>"><img class="article-image2"src="<?php echo get_theme_file_uri('images/homepage-image1-row2.png'); ?>" alt="Description of Image 1"></a> 

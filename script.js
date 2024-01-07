@@ -36,15 +36,16 @@ const names = [
   setupBurgerNav();
 
 
-function setupBurgerNav() {
-  const burger = document.querySelector("header .left-container.menu svg");
-    const nav = document.querySelector("nav ul");
-
+  function setupBurgerNav() {
+    const burger = document.querySelector("header .left-container.menu svg");
+    const burgerElements = document.querySelector(".burger-elements");
+  
     burger.addEventListener("click", function () {
-        burger.classList.toggle("open");
-        nav.classList.toggle("open");
+      burger.classList.toggle("open");
+      burgerElements.classList.toggle("open");
     });
-}
+  }
+  
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

@@ -21,7 +21,7 @@
       </div>      
     <a href="<?php echo site_url()?>"><img class="header-logo" src="<?php echo get_theme_file_uri('images/3fd0a12b635356f072776a8e341e9f1d.png'); ?>" alt=""></a> 
 
-    <nav>
+    <nav class="homepage-nav">
         <ul class="middle-nav-container">
             <li class="left-container menu"><svg viewbox="0 0 100 100">
                 <rect x="10" y="15" width="80" height="10"/>
@@ -29,6 +29,13 @@
                 <rect x="10" y="45" width="80" height="10"/>
                 <rect x="10" y="75" width="80" height="10"/>
             </svg> <span class="menu-text">Menu</span></li> 
+            <div class="burger-elements">
+            <a class="burger-menu" href="">Home</a> 
+            <a class="burger-menu" href="">Shop</a>  
+            <a class="burger-menu" href="">PLayers</a> 
+            <a class="burger-menu" href="">About Us</a> 
+            <a class="burger-menu" href="">Follow</a> 
+            </div>
             <li class="nav-item middle-nav"><a href="#" class="hover-home"><li class="nav-item middle-nav">
                 <a href="<?php echo site_url()?>" class="hover-home">
                     <img class="hover-image-home" src="<?php echo get_theme_file_uri('/images/home.svg'); ?>" alt="">

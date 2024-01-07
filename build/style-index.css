@@ -74,11 +74,11 @@ nav li {
 }
 
 nav li.left-container {
-  margin-right: auto; /* Push to the left */
+  margin-right: auto; 
 }
 
 nav li.right-nav {
-  margin-left: auto; /* Push to the right */
+  margin-left: auto; 
   
 }
 
@@ -149,6 +149,8 @@ nav ul li a img {
 nav ul li a:hover img {
   opacity: 0.4;
 }
+
+
 
 .middle-nav-container {
   flex-grow: 2;
@@ -2299,6 +2301,14 @@ ul.wc-block-grid__products {
   color: white;
 }
 
+.editor-styles-wrapper table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name, table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name {
+  display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: white;
+}
+
+
 
 
 
@@ -3639,6 +3649,40 @@ rect:nth-child(3){
 .open rect:last-child{
   transform: translateY(-30px);
   opacity: 0;
+}
+
+.burger-elements {
+  position: absolute;
+  left: -20vw;
+  top: 439px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  line-height: 58px;
+  z-index: 12;
+  background-color: white;
+  padding: 2em;
+  width: 223px;
+  height: 412px;
+  transition: left 0.5s; /* Add transition for smooth movement */
+}
+
+.burger-elements.open {
+  left: 0;
+}
+
+
+
+.burger-menu {
+  /* display: none; */
+  flex-direction: column; /* Set the flex direction to column */
+  align-items: center; /* Align items at the center horizontally */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.burger-menu.visible {
+  display: flex; /* Change display to flex when visible */
 }
 
 /*******************BURGER MENU END*****************************/
