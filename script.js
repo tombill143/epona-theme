@@ -30,16 +30,17 @@ const names = [
     return names[randomIndex];
   }
 
+  setupBurgerNav();
+
+
   // Update the content of the paragraph with a random name
   document.getElementById("randomName").innerText = generateRandomName();
 
-  setupBurgerNav();
 
 
   function setupBurgerNav() {
     const burger = document.querySelector("header .left-container.menu svg");
     const burgerElements = document.querySelector(".burger-elements");
-  
     burger.addEventListener("click", function () {
       burger.classList.toggle("open");
       burgerElements.classList.toggle("open");

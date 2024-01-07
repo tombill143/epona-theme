@@ -23,18 +23,18 @@
 
     <nav class="homepage-nav">
         <ul class="middle-nav-container">
-            <li class="left-container menu"><svg viewbox="0 0 100 100">
+            <li class="left-container menu"><svg class="burgersvg"viewbox="0 0 100 100">
                 <rect x="10" y="15" width="80" height="10"/>
                 <rect x="10" y="45" width="80" height="10"/>
                 <rect x="10" y="45" width="80" height="10"/>
                 <rect x="10" y="75" width="80" height="10"/>
             </svg> <span class="menu-text">Menu</span></li> 
             <div class="burger-elements">
-            <a class="burger-menu" href="">Home</a> 
-            <a class="burger-menu" href="">Shop</a>  
-            <a class="burger-menu" href="">PLayers</a> 
-            <a class="burger-menu" href="">About Us</a> 
-            <a class="burger-menu" href="">Follow</a> 
+            <a class="burger-menu" href="<?php echo site_url(); ?>">Home</a> 
+            <a class="burger-menu" href="<?php echo site_url('shop'); ?>">Shop</a>  
+            <a class="burger-menu" href="<?php echo site_url('player'); ?>">Players</a> 
+            <a class="burger-menu" href="<?php echo site_url('about-us'); ?>">About Us</a> 
+            <a class="burger-menu" href="<?php echo site_url('follow'); ?>">Follow</a> 
             </div>
             <li class="nav-item middle-nav"><a href="#" class="hover-home"><li class="nav-item middle-nav">
                 <a href="<?php echo site_url()?>" class="hover-home">

@@ -1363,6 +1363,16 @@ rect:nth-child(3){
   opacity: 0;
 }
 
+.burger-menu {
+
+  transition: color 0.3s; 
+}
+
+.burger-menu:hover {
+  color: red;
+ 
+}
+
 /*******************BURGER MENU END*****************************/
 
 
@@ -2209,6 +2219,7 @@ a.added_to_cart.wc-forward {
   color: white;
   border-radius: 12px;
   padding: 2em;
+  margin-bottom: 2em;
 }
 
 .is-medium table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity, .is-mobile table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity, .is-small table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantity {
@@ -2309,11 +2320,18 @@ ul.wc-block-grid__products {
 }
 
 
+/**********SHOPPING CART END************************************
 
+/**************CHECKOUT*****************************/
 
+body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button:not(.is-link) {
+  min-height: 3em;
+  /* width: 317px; */
+  background: none;
+}
 
+/*********CHECKOUT END********************************/
 
-/**********SHOPPING CART END************************************/
 
 
 /*********PLAYERS PAGE************************************/
@@ -2385,6 +2403,18 @@ nav a {
   text-decoration: none;
   color: #3B4A3F;
   font-weight: bold;
+}
+
+nav li.left-container:hover {
+  color: red;
+}
+
+rect:hover{
+  color: red;
+}
+
+nav li.left-container:hover{
+  color: red;
 }
 
 
@@ -3944,6 +3974,166 @@ rect:nth-child(3){
     max-width: 100%;
     margin: 0 auto;
   }
+
+  .burger-elements {
+    position: absolute;
+    left: -108vw;
+    top: 319px!important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    line-height: 58px;
+    z-index: 12;
+    background-color: white;
+    padding: 2em;
+    width: 389px;
+    height: 412px;
+    transition: left 0.5s;
+}
+
+.image-container.narrower {
+  width: 388px;
+}
+
+.image-container2 {
+  width: 350px;
+  height: 285px;
+  margin-top: 5em;
+}
+
+.stories-section {
+  margin-top: 0px;
+}
+
+hr {
+  border: 1px solid #3B4A3F;
+  margin: 10px 0;
+  width: 352px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media screen and (max-width: 1000px) {
+li.nav-item.middle-nav{
+  display: none;
+}
+
+.burger-elements {
+  left: -100vw;
+  top: 439px;
+
+}
+
+.middle-nav-container {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  width: 1540px;
+  max-width: 100%;
+  margin-left: 5em;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.article-image-narrower,
+.article-image-narrower26{
+  display: none;
+}
+ 
+.image-container {
+  width: 415px;
+  height: 408x;
+}
+
+
+.banner-container {
+  width: 610px;
+  height: 160px;
+}
+
+.article-image {
+  width: 414px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-container-narrower2,
+.article-image-narrower2{
+  display: none;
+}
+
+.article-image2 {
+  width: 270px;
+  height: 167px;
+  object-fit: cover;
+}
+
+#section2{
+  margin-left: 6em;
+  gap: 16px;
+}
+section.homepage-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 6rem;
+  width: 1626px;
+  max-width: 100%;
+  margin-left: 6em;
+  margin-right: 2em;
+}
+
+
+
+#section4{
+  width: 822px;
+  gap: 15px;
+}
+
+.category-title {
+  display: flex;
+  flex-direction: start;
+  justify-content: left;
+  /* align-items: center; */
+  width: 253px;
+  max-width: 1520px;
+  margin-left: 2.5em;
+  /* margin-right: auto; */
+  font-size: 24px;
+  /* border: 1px solid black; */
+}
+
+/************************TEMPLATE PAGE IPAD VIEW*********************************************/
+
+.page-title {
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 24px;
+  margin-right: 4em;
+  width: 615px;
+ 
+}
+
+.interior-page-section{
+  margin-left: 4rem!important;
+}
+
+/*********************TEMPLATE PAGE IPAD VIEW END*********************************************/
+
 }
 
 @media screen and (max-width: 1600px) {
@@ -4774,7 +4964,7 @@ h3 {
 
 
 
-/******HOMEPAGE MOVILE VIEW******************************************/
+/******HOMEPAGE MOBILE VIEW******************************************/
 
 @media screen and (max-width: 768px) {
 .homepage-section{
@@ -5004,3 +5194,11 @@ ol, ul {
 .interior-page-section .sidebar {
   display: none;
 }
+
+/************************TEMPLATE PAGE MOBILE VIEW*********************************************/
+
+
+
+/**********************TEMPLATE PAGE MOBILE VIEW END******************************************/
+
+
